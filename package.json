@@ -1,0 +1,17 @@
+{
+  "name": "social-proof-section",
+  "version": "1.0.0",
+  "description": "social proof section page",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass" : "node-sass sass/main.scss css/style.css -w",
+    "prefix:css" : "postcss --use autoprefixer -b \"last 10 versions \" css/style.css -o css/style.prefixed.css" 
+  },
+  "author": "Sandro Bochorishvili",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "node-sass": "^5.0.0",
+    "postcss-cli": "^8.3.0"
+  }
+}

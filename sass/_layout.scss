@@ -1,0 +1,123 @@
+.social-proof {
+  height: 90vh;
+  padding: 10em 4em 10em 4em;
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    display: flex;
+  }
+  &__top,
+  &__bottom {
+    height: 50%;
+  }
+  &__header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text-main {
+    font-size: 1.2rem;
+    color: var(--color-tertiary);
+  }
+  &__ratings {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__rating {
+    display: flex;
+    width: 60%;
+    padding: 1.5em 0 1.5em 2.5em;
+    background-color: var(--color-quaternary);
+    border-radius: 1rem;
+    justify-content: space-around;
+  }
+  &__rating:not(:last-child) {
+    margin-bottom: 1.5em;
+  }
+
+  &__stars {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__star {
+    background-image: url(../img/icon-star.svg);
+    height: 1.2rem;
+    width: 1.2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+  }
+
+  &__rating-origin {
+    width: 60%;
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__feedback {
+    background-color: var(--color-primary);
+    border-radius: 0.7rem;
+    padding: 3em;
+    flex: 0 0 31.5%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__user-header-container {
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__user-img {
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+  }
+
+  &__user-credentials {
+    color: var(--color-secondary);
+    opacity: 60%;
+    font-size: 1.1rem;
+  }
+
+  &__user-text {
+    color: var(--color-quaternary);
+    line-height: 1.7;
+    opacity: 90%;
+    font-size: 1.1rem;
+  }
+}
+
+.attribution {
+  color: var(--color-tertiary);
+  font-size: 1.2rem;
+  text-align: center;
+
+  & a {
+    color: var(--color-primary);
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.1s;
+
+    &:hover {
+      transform: skewX(-15deg);
+      font-weight: bold;
+    }
+  }
+}
