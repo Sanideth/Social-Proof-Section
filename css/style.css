@@ -78,7 +78,7 @@ body {
         margin: 0 auto 2rem auto;
         text-align: center; } }
   .social-proof__text-main {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--color-tertiary); }
   .social-proof__ratings {
     flex: 2;
@@ -95,7 +95,7 @@ body {
         margin: 0 auto; } }
   .social-proof__rating {
     display: flex;
-    width: 60%;
+    width: 65%;
     padding: 1.5em 0 1.5em 0.5em;
     background-color: var(--color-quaternary);
     border-radius: 1rem;
@@ -103,7 +103,7 @@ body {
     align-items: baseline; }
     @media only screen and (max-width: 53.125em) {
       .social-proof__rating {
-        width: 61.5%; } }
+        width: 71%; } }
     @media only screen and (max-width: 42.25em) {
       .social-proof__rating {
         width: 100%;
@@ -136,7 +136,7 @@ body {
     width: 60%;
     color: var(--color-primary);
     font-weight: bold;
-    font-size: 1.2rem; }
+    font-size: 1.4rem; }
     @media only screen and (max-width: 42.25em) {
       .social-proof__rating-origin {
         width: 40%; } }
@@ -166,6 +166,7 @@ body {
     justify-content: space-around; }
   .social-proof__user-header-container {
     display: flex;
+    margin-bottom: 1rem;
     align-items: center; }
     @media only screen and (max-width: 42.25em) {
       .social-proof__user-header-container {
@@ -179,12 +180,12 @@ body {
   .social-proof__user-credentials {
     color: var(--color-secondary);
     opacity: 60%;
-    font-size: 1.1rem; }
+    font-size: 1.2rem; }
   .social-proof__user-text {
     color: var(--color-quaternary);
     line-height: 1.7;
     opacity: 90%;
-    font-size: 1.1rem; }
+    font-size: 1.2rem; }
 
 .attribution {
   color: var(--color-tertiary);
