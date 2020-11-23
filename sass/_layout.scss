@@ -1,20 +1,60 @@
 .social-proof {
-  height: 90vh;
-  padding: 10em 4em 10em 4em;
+  height: 75vh;
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
+  padding: 5em;
+  background: url(../img/bg-pattern-bottom-desktop.svg) 2rem 0 no-repeat,
+    url(../img/bg-pattern-top-desktop.svg) 0 -20rem no-repeat;
+  border-bottom: 0.1rem solid var(--color-quaternary);
+
+  @media only screen and (max-width: $bp-largest) {
+    background: url(../img/bg-pattern-bottom-desktop.svg) -15rem 0 no-repeat,
+      url(../img/bg-pattern-top-desktop.svg) 0 -20rem no-repeat;
+  }
+  @media only screen and (max-width: $bp-large) {
+    height: auto;
+    margin-bottom: 3rem;
+    padding: 3em 0 0 0;
+    background: url(../img/bg-pattern-bottom-desktop.svg) -15rem 25rem no-repeat,
+      url(../img/bg-pattern-top-desktop.svg) 20rem -22rem no-repeat;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    background: url(../img/bg-pattern-bottom-mobile.svg) bottom -25rem right 0rem
+        no-repeat,
+      url(../img/bg-pattern-top-mobile.svg) top 0rem left -15rem no-repeat;
+  }
 
   &__top {
     display: flex;
+
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: column;
+      margin-bottom: 3rem;
+    }
   }
   &__top,
   &__bottom {
     height: 50%;
+    @media only screen and (max-width: $bp-large) {
+      height: auto;
+    }
   }
   &__header {
     flex: 1;
     display: flex;
     flex-direction: column;
+    @media only screen and (max-width: $bp-large) {
+      width: 60%;
+      margin: 0 auto 2rem auto;
+      text-align: center;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 80%;
+      margin: 0 auto 2rem auto;
+      text-align: center;
+    }
   }
 
   &__text-main {
@@ -26,14 +66,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media only screen and (max-width: $bp-large) {
+      width: 60%;
+      margin: 0 auto;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
   &__rating {
     display: flex;
     width: 60%;
-    padding: 1.5em 0 1.5em 2.5em;
+    padding: 1.5em 0 1.5em 0.5em;
     background-color: var(--color-quaternary);
     border-radius: 1rem;
     justify-content: space-around;
+    align-items: baseline;
+    @media only screen and (max-width: $bp-largest) {
+      width: 61.5%;
+    }
+    @media only screen and (max-width: $bp-large) {
+      width: 100%;
+      align-items: center;
+    }
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
   &__rating:not(:last-child) {
     margin-bottom: 1.5em;
@@ -43,6 +104,12 @@
     width: 25%;
     display: flex;
     justify-content: space-around;
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 1rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      width: 35%;
+    }
   }
 
   &__star {
@@ -59,19 +126,34 @@
     color: var(--color-primary);
     font-weight: bold;
     font-size: 1.2rem;
+    @media only screen and (max-width: $bp-large) {
+      width: 40%;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+    }
   }
 
   &__bottom {
     display: flex;
     justify-content: space-between;
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: column;
+      width: 60%;
+      margin: 0 auto 2rem auto;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 
   &__feedback {
     background-color: var(--color-primary);
     border-radius: 0.7rem;
-    padding: 3em;
+    padding: 2.5em;
     flex: 0 0 31.5%;
-    height: 80%;
+    height: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -79,15 +161,18 @@
 
   &__user-header-container {
     display: flex;
-    width: 65%;
-    justify-content: space-between;
+
     align-items: center;
+    @media only screen and (max-width: $bp-large) {
+      margin-bottom: 1.5rem;
+    }
   }
   &__user-img {
     display: block;
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
+    margin-right: 2.5rem;
   }
 
   &__user-credentials {
@@ -119,5 +204,10 @@
       transform: skewX(-15deg);
       font-weight: bold;
     }
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    width: 80%;
+    margin: 0 auto;
   }
 }

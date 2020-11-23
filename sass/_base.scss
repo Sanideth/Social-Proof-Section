@@ -12,9 +12,17 @@
   --color-tertiary: hsl(303, 10%, 53%);
   --color-quaternary: hsl(300, 24%, 96%);
 }
+$bp-largest: 53.125em; //breakpoint at 850px
+$bp-large: 42.25em; //breakpoint at 676px
+$bp-small: 31.25em; //breakpoint at 500px
+$bp-smallest: 18.75em; //breakpoint at 300px
 
 html {
   font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 55%;
+  }
 }
 
 body {
@@ -23,9 +31,13 @@ body {
   align-items: center;
   height: 100vh;
   font-family: "Kumbh Sans", sans-serif;
+  @media only screen and (max-width: $bp-small) {
+    height: auto;
+  }
 }
 
 .container {
   max-width: 140rem;
-  width: 70vw;
+  width: 100rem;
+  min-height: 0;
 }
