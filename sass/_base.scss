@@ -31,7 +31,7 @@ body {
   align-items: center;
   height: 100vh;
   font-family: "Kumbh Sans", sans-serif;
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: $bp-large) {
     height: auto;
   }
 }

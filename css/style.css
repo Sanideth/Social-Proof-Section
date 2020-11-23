@@ -23,7 +23,7 @@ body {
   align-items: center;
   height: 100vh;
   font-family: "Kumbh Sans", sans-serif; }
-  @media only screen and (max-width: 31.25em) {
+  @media only screen and (max-width: 42.25em) {
     body {
       height: auto; } }
 
